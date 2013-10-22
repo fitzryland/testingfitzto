@@ -1,0 +1,184 @@
+// http://patorjk.com/software/taag/#p=display&f=Georgia11&t=Type%20Something%20
+// http://patorjk.com/software/taag/#p=display&f=4Max&t=Type%20Something%20
+// `7MMF'                                               mm
+//   MM                                                 MM
+//   MM  `7MMpMMMb.pMMMb. `7MMpdMAo.  ,pW"Wq.`7Mb,od8 mmMMmm ,pP"Ybd
+//   MM    MM    MM    MM   MM   `Wb 6W'   `Wb MM' "'   MM   8I   `"
+//   MM    MM    MM    MM   MM    M8 8M     M8 MM       MM   `YMMMa.
+//   MM    MM    MM    MM   MM   ,AP YA.   ,A9 MM       MM   L.   I8
+// .JMML..JMML  JMML  JMML. MMbmmd'   `Ybmd9'.JMML.     `MbmoM9mmmP'
+//                          MM
+//                        .JMML.
+@import 'normalize';
+
+//                                ,,           ,,        ,,
+// `7MMF'   `7MF'                 db          *MM      `7MM
+//   `MA     ,V                                MM        MM
+//    VM:   ,V ,6"Yb.  `7Mb,od8 `7MM   ,6"Yb.  MM,dMMb.  MM  .gP"Ya  ,pP"Ybd
+//     MM.  M'8)   MM    MM' "'   MM  8)   MM  MM    `Mb MM ,M'   Yb 8I   `"
+//     `MM A'  ,pm9MM    MM       MM   ,pm9MM  MM     M8 MM 8M"""""" `YMMMa.
+//      :MM;  8M   MM    MM       MM  8M   MM  MM.   ,M9 MM YM.    , L.   I8
+//       VF   `Moo9^Yo..JMML.   .JMML.`Moo9^Yo.P^YbmdP'.JMML.`Mbmmd' M9mmmP'
+// Gradient Colors
+$gLightPurple: hsla(264, 100, 90, 0.5);
+$white: hsla(0, 100, 100, 0.5);
+$gDarkPurple: hsla(264, 100, 10, 0.1);
+
+
+
+//                   ,,               ,,             gp
+// `7MMM.     ,MMF'  db               db             \/
+//   MMMb    dPMM                                    `'
+//   M YM   ,M MM  `7MM  `7M'   `MF'`7MM  `7MMpMMMb.   ,pP"Ybd
+//   M  Mb  M' MM    MM    `VA ,V'    MM    MM    MM   8I   `"
+//   M  YM.P'  MM    MM      XMX      MM    MM    MM   `YMMMa.
+//   M  `YM'   MM    MM    ,V' VA.    MM    MM    MM   L.   I8
+// .JML. `'  .JMML..JMML..AM.   .MA..JMML..JMML  JMML. M9mmmP'
+@mixin group() {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+
+
+//                                                        ,,
+// `7MM"""YMM               mm                          `7MM
+//   MM    `7               MM                            MM
+//   MM   d    `7M'   `MF'mmMMmm .gP"Ya `7MMpMMMb.   ,M""bMM
+//   MMmmMM      `VA ,V'    MM  ,M'   Yb  MM    MM ,AP    MM
+//   MM   Y  ,     XMX      MM  8M""""""  MM    MM 8MI    MM
+//   MM     ,M   ,V' VA.    MM  YM.    ,  MM    MM `Mb    MM
+// .JMMmmmmMMM .AM.   .MA.  `Mbmo`Mbmmd'.JMML  JMML.`Wbmd"MML.
+
+
+
+//              ,,        ,,
+//   .g8""8q.  *MM        db                    mm
+// .dP'    `YM. MM                              MM
+// dM'      `MM MM,dMMb.`7MM  .gP"Ya   ,p6"bo mmMMmm ,pP"Ybd
+// MM        MM MM    `Mb MM ,M'   Yb 6M'  OO   MM   8I   `"
+// MM.      ,MP MM     M8 MM 8M"""""" 8M        MM   `YMMMa.
+// `Mb.    ,dP' MM.   ,M9 MM YM.    , YM.    ,  MM   L.   I8
+//   `"bmmd"'   P^YbmdP'  MM  `Mbmmd'  YMbmd'   `MbmoM9mmmP'
+//                     QO MP
+//                     `bmP
+.media-object {
+	@include group();
+}
+.media {
+
+}
+.media-description {
+
+}
+
+//            ,,                                          ,,        ,,
+//  .M"""bgd  db   mm               `7MMF'     A     `7MF'db      `7MM
+// ,MI    "Y       MM                 `MA     ,MA     ,V            MM
+// `MMb.    `7MM mmMMmm .gP"Ya         VM:   ,VVM:   ,V `7MM   ,M""bMM  .gP"Ya
+//   `YMMNq.  MM   MM  ,M'   Yb         MM.  M' MM.  M'   MM ,AP    MM ,M'   Yb
+// .     `MM  MM   MM  8M""""""         `MM A'  `MM A'    MM 8MI    MM 8M""""""
+// Mb     dM  MM   MM  YM.    ,          :MM;    :MM;     MM `Mb    MM YM.    ,
+// P"Ybmmd" .JMML. `Mbmo`Mbmmd'           VF      VF    .JMML.`Wbmd"MML.`Mbmmd'
+* {
+	box-sizing: border-box;
+}
+img {
+	padding: 0 !important; // with box-sizing: border-box images should never have padding
+}
+
+
+html {
+	background-color:white;
+	background-image:
+		-webkit-repeating-linear-gradient(45deg,
+			$gLightPurple,
+			$gLightPurple 10px,
+			$white 10px,
+			$white 15px,
+			$gDarkPurple 15px,
+			$gDarkPurple 25px,
+			$gLightPurple 25px,
+			$gLightPurple 30px,
+			$gDarkPurple 30px,
+			$gDarkPurple 45px,
+			$white 45px,
+			$white 100px),
+		-webkit-repeating-linear-gradient(135deg,
+			$gLightPurple,
+			$gLightPurple 10px,
+			$white 10px,
+			$white 15px,
+			$gDarkPurple 15px,
+			$gDarkPurple 25px,
+			$white 25px,
+			$white 30px,
+			$gDarkPurple 30px,
+			$gDarkPurple 45px,
+			$white 45px,
+			$white 100px)
+	;
+	background-image:
+		repeating-linear-gradient(45deg,
+			$gLightPurple,
+			$gLightPurple 10px,
+			$white 10px,
+			$white 15px,
+			$gDarkPurple 15px,
+			$gDarkPurple 25px,
+			$gLightPurple 25px,
+			$gLightPurple 30px,
+			$gDarkPurple 30px,
+			$gDarkPurple 45px,
+			$white 45px,
+			$white 100px),
+		repeating-linear-gradient(135deg,
+			$gLightPurple,
+			$gLightPurple 10px,
+			$white 10px,
+			$white 15px,
+			$gDarkPurple 15px,
+			$gDarkPurple 25px,
+			$white 25px,
+			$white 30px,
+			$gDarkPurple 30px,
+			$gDarkPurple 45px,
+			$white 45px,
+			$white 100px)
+	;
+	height: 100%;
+}
+body {
+	margin: 1em auto 0;
+	width: 300px;
+}
+
+
+// `7MM"""Mq.
+//   MM   `MM.
+//   MM   ,M9 ,6"Yb.  .P"Ybmmm .gP"Ya  ,pP"Ybd
+//   MMmmdM9 8)   MM :MI  I8  ,M'   Yb 8I   `"
+//   MM       ,pm9MM  WmmmP"  8M"""""" `YMMMa.
+//   MM      8M   MM 8M       YM.    , L.   I8
+// .JMML.    `Moo9^Yo.YMMMMMb  `Mbmmd' M9mmmP'
+//                   6'     dP
+//                   Ybmmmd'
+
+//
+// 88  88  dP"Yb  8b    d8 888888
+// 88  88 dP   Yb 88b  d88 88__
+// 888888 Yb   dP 88YbdP88 88""
+// 88  88  YbodP  88 YY 88 888888
+//
+
+//                                                    ,,        ,,
+//   .g8""8q.                                         db      `7MM
+// .dP'    `YM.                                                 MM
+// dM'      `MM `7M'   `MF'.gP"Ya `7Mb,od8 `7Mb,od8 `7MM   ,M""bMM  .gP"Ya  ,pP"Ybd
+// MM        MM   VA   ,V ,M'   Yb  MM' "'   MM' "'   MM ,AP    MM ,M'   Yb 8I   `"
+// MM.      ,MP    VA ,V  8M""""""  MM       MM       MM 8MI    MM 8M"""""" `YMMMa.
+// `Mb.    ,dP'     VVV   YM.    ,  MM       MM       MM `Mb    MM YM.    , L.   I8
+//   `"bmmd"'        W     `Mbmmd'.JMML.   .JMML.   .JMML.`Wbmd"MML.`Mbmmd' M9mmmP'
